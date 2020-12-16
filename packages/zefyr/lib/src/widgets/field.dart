@@ -64,7 +64,7 @@ class _ZefyrFieldState extends State<ZefyrField> {
 
     if (widget.height != null) {
       child = ConstrainedBox(
-        constraints: BoxConstraints.tightFor(height: widget.height),
+        constraints: BoxConstraints.loose(Size(double.infinity, widget.height)),
         child: child,
       );
     }
